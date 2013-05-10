@@ -1,0 +1,21 @@
+<div id="PanelLeft">
+
+	Liste des Playlists :
+	<ul>
+		<li ng-repeat="list in shared.playlists" ng-click="list.setActiveList()" ng-class="{actif:list.active()}">
+			{{list.Name}}
+		</li>
+	</ul>
+
+
+	<br />
+	<br />
+
+	Liste des Genres :
+	<ul>
+		<li ng-repeat="list in shared.genres" ng-click="list.setActiveList()" ng-class="{actif:list.active()}">
+			{{list.Name}}
+		</li>
+	</ul>
+
+</div>

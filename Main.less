@@ -1,0 +1,48 @@
+@import "Variables.less";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#PanelLeft {
+	position:absolute;
+	left:0;
+	top:@PanelTopHeight;
+	bottom:0;
+	width:@PanelLeftWidth;
+	background-color:@BackgroundColor;
+	overflow: auto;
+	color:#ccc;
+	padding-left:20px;		
+	padding-top:20px;
+	ul {
+		margin:0;
+		padding-left:5px;		
+		list-style-type: none;
+		li {
+			margin-right:10px;
+			font-weight:600;
+			padding-top:2px;
+			padding-left:5px;
+			padding-bottom:2px;
+			color:#ccc;
+			cursor: pointer;
+			border-radius:5px;
+			&:hover {
+				background-color:lighten(@BackgroundColor, 10%); 
+				-webkit-transition:background-color 50ms;
+			}
+			&.actif {
+				background-color:#86b410;
+				color:#fff;
+				-webkit-transition:background-color 100ms;
+			}
+		}
+	}
+
+
+
+
+}

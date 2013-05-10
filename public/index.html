@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="components/angular/angular.js"></script>
+    <script src="RMM.js"></script>
+    <script src="Panel_left.js"></script>
+    <link href="Main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body ng-controller="RMM">
+    <ng-include src="'Panel_left.html'"></ng-include>
+    <ng-include src="'Panel_right.html'"></ng-include>
+
+    <input ng-model="shared.test"/>
+
+  </body>
+</html>
